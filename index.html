@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unilend</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="navBarContainer">
+    <div class="mainLogoContainer">
+      <img src="./assets/unilendLogo.png" alt="mainlogo" class="mainLogo" id="mainlogo"/>
+    </div>
+    <div class="header">
+      <li>Home</li>
+      <li>Home</li>
+      <li>Home</li>
+      <li>Home</li>
+      <li>
+        <!-- <input type="checkbox" onclick="myFunction()"> -->
+         <!-- <label class="theme-switch" for="checkbox">
+       <input type="checkbox" id="checkbox" />
+       <div class="slider round"></div>
+     </label> -->
+      </li>
+      <div class="btnContainer">
+        <button class="appBtn">APP</button>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="toggleContainer" onclick="handleNav()">
+      <img src="./assets/toggleOpen.png" alt="" />
+    </a>
+  </div>
+  <div class="headerNav" id="headerNav">
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+    <a href="#">Home</a>
+  </div>
+  <div class="headerTextContainer">
+    <p><span class="colorText">Making Every</span>&nbsp;Asset Productive</p>
+  </div>
+
+  <div class="bannerImgContainer">
+    <video class="bannerImg" controls="false" autoplay loop muted>
+      <source src="./assets/Hero_slider.mp4" type="video/mp4">
+      <!-- <source src="movie.ogg" type="video/ogg""> -->
+      Your browser does not support the video tag.
+    </video>
+    <!-- <img src="./assets/bannerImg.png" alt="bannerimg" class="bannerImg" />
+    <img src="./assets/bannerImgMobile.png" alt="bannerimg" class="bannerImgMobile" /> -->
+    <div class="poweredByContainer">
+      <div class="poweredBy-first-child">
+        <h1>Powered By</h1>
+      </div>
+      <div class="poweredBySubContainer">
+        <img src="./assets/ethLogo.png" alt="" srcset="" id="ethLogo"/>
+        <h1>Ethereum</h1>
+      </div>
+      <div class="poweredBySubContainer">
+        <img src="./assets/PolygonLogo.png" alt="" srcset="" id="polyLogo"/>
+        <h1>Polygon</h1>
+      </div>
+      <div class="poweredBySubContainer">
+        <img src="./assets/BInanceLogo.png" alt="" srcset="" id="bscLogo"/>
+        <h1>Binance</h1>
+      </div>
+    </div>
+  </div>
+
+  <section id="platforms-to-trade">
+   <div class="platform_container">
+          <h1>Trade UFT Token  <br>
+            <span>On Major Exchanges</span></h1>
+       <div class="platforms">
+
+        <img src="./assets/binance.svg" alt="">
+        <img src="./assets/uniswap.svg" alt="">
+       </div>     
+   </div>
+  </section>
+  <!-- <section id="custom-card-section">
+    <div class="custom-container">
+
+      <div class="custom-card">
+        <div class="custom-card-img">
+          <img src="./assets/millionImg1.png" alt="" />
+          <img class="shadowBtn" src="./assets/shadow.png" alt="" />
+        </div>
+        <h3 class="custom-card-title">$50 Million</h3>
+        <h3 class="custom-card-sub-title">Worth of Flashloan</h3>
+      </div>
+      <div class="custom-card">
+        <div class="custom-card-img">
+          <img src="./assets/millionImg1.png" alt="" />
+          <img class="shadowBtn" src="./assets/shadow.png" alt="" />
+        </div>
+        <h3 class="custom-card-title">$50 Million</h3>
+        <h3 class="custom-card-sub-title">Worth of Flashloan</h3>
+      </div>
+      <div class="custom-card">
+        <div class="custom-card-img">
+          <img src="./assets/millionImg1.png" alt="" />
+          <img class="shadowBtn" src="./assets/shadow.png" alt="" />
+        </div>
+        <h3 class="custom-card-title">$50 Million</h3>
+        <h3 class="custom-card-sub-title">Worth of Flashloan</h3>
+      </div>
+      <div class="custom-card">
+        <div class="custom-card-img">
+          <img src="./assets/millionImg2.png" alt="" />
+          <img class="shadowButton" src="./assets/shadow2.png" alt="" />
+        </div>
+        <h3 class="custom-card-title">$5 Million</h3>
+        <h3 class="custom-card-sub-title">Total value locked</h3>
+      </div>
+      <div class="custom-card">
+        <div class="custom-card-img">
+        </div>
+        <h3 class="custom-card-title">
+          1500 pool
+        </h3>
+        <h3 class="custom-card-sub-title">Community members</h3>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="explore-dapp-section">
+    <div class="explore-dapp-container">
+      <div class="explore-dapp-content">
+        <div class="explore-dapp-title">
+          Explore <br />
+          <span style="font-weight: bold;">Omnis Dapp</span>
+        </div>
+        <div class="explore-dapp-sub-title">
+          UniLend is a permission-less decentralized protocol that combines
+          spotUniLend is a permission-less decentralized protocol that
+          combines spot UniLend is a permission-less decentralized protocol
+          that combines spot
+        </div>
+        <div class="explore-dapp-button">Launch Dapp</div>
+      </div>
+      <div class="explore-dapp-content-1">
+        <img src="./assets/exploreImg5.png" alt="exploreImg1" id="exploreImg"/>
+      </div>
+    </div>
+    <div class="explore-dapp-container">
+      <div class="explore-dapp-content-2">
+        <img src="./assets/exploreImg4.png" alt="exploreImg2" />
+      </div>
+      <div class="explore-dapp-content explore-content-margin">
+        <div class="explore-dapp-title">
+          Explore <br />
+          <span style="font-weight: bold;">Omnis Dapp</span>
+        </div>
+        <div class="explore-dapp-sub-title">
+          UniLend is a permission-less decentralized protocol that combines
+          spotUniLend is a permission-less decentralized protocol that
+          combines spot UniLend is a permission-less decentralized protocol
+          that combines spot
+        </div>
+        <div class="explore-dapp-button">Launch Dapp</div>
+      </div>
+    </div>
+    <!-- <div class="explore-dapp-container">
+      <div class="explore-dapp-content">
+        <div class="explore-dapp-title">
+          Explore <br />
+          Omnis NFTs
+        </div>
+        <div class="explore-dapp-sub-title">
+          UniLend is a permission-less decentralized protocol that combines
+          spotUniLend is a permission-less decentralized protocol that
+          combines spot UniLend is a permission-less decentralized protocol
+          that combines spot
+        </div>
+        <div class="explore-dapp-button">Check Documentation</div>
+      </div>
+
+      <div class="explore-dapp-content-2">
+        <img src="/assets/exploreImg3.png" alt="exploreImg1" />
+      </div>
+    </div> -->
+  </section>
+  <div class="common-container">
+    <div class="container-title">
+      Our<br />
+      <span class="container-title-sub">Features</span>
+    </div>
+    <!-- <div class="featuresCarousal">
+          <div class="featuresCarousalCard">
+        <div class="featuresCarousalImgContainer">
+          <img src="./assets/featureImg4.png" alt="" srcset="" style="width: 66.4px;height:106.7px" />
+          <h5>Permission-Less</h5>
+        </div>
+        <div class="featuresCarousalTextContainer">
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+        </div>
+      </div>
+          <div class="featuresCarousalCard">
+        <div class="featuresCarousalImgContainer">
+          <img src="./assets/featureImg4.png" alt="" srcset="" style="width: 66.4px;height:106.7px" />
+          <h5>Permission-Less</h5>
+        </div>
+        <div class="featuresCarousalTextContainer">
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+        </div>
+      </div>
+      <div class="arrow-container">
+        <div class="prev-arrow"><img src="./assets/leftArrow.png" alt="" srcset=""></div>
+        <div class="next-arrow"><img src="./assets/rightArrow.png" alt="" srcset=""></div>
+      </div>
+      </div> -->
+
+    <div class="featuresCarousalContainer">
+      <div class="our-team-card-container-mobile ">
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" style="margin-top: 68px;">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="features-card-mobile">
+                <div class="featuresCard">
+                  <div class="featuresImgContainer">
+                    <img src="./assets/featureImg1.png" alt="" srcset="" style="width: 202px;height:202px" />
+                    <h5>Permission-Less</h5>
+                  </div>
+                  <div class="featuresTextContainer">
+                    <p>
+                      Unilend is a permission-less decentralized protocol that combines
+                      spot UniLend is a permission-less decentralized protocol that
+                      combines spot
+                    </p>
+                    <h4>HOW IT WORKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-indicators" style="position: relative;margin: 1rem;">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="featuresContainer">
+      <div class="featuresCard">
+        <!-- <div class="featuresImgContainer">
+        </div> -->
+        <div class="featuresTextContainer">
+          <div class="imgSection">
+
+            <img class="featuresCard-img" src="./assets/featureImg1.png" alt="" srcset="" />
+          </div>
+          <h5>Permission-Less</h5>
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+          <h4>HOW IT WORKS</h4>
+        </div>
+      </div>
+      <div class="featuresCard">
+        <!-- <div class="featuresImgContainer">
+        </div> -->
+        <div class="featuresTextContainer">
+          <div class="imgSection">
+
+            <img src="./assets/featureImg2.png" alt="" srcset="" style="width: 158.96px" />
+          </div>
+          <h5>Permission-Less</h5>
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+          <h4>HOW IT WORKS</h4>
+        </div>
+      </div>
+      <div class="featuresCard">
+        <!-- <div class="featuresImgContainer">
+        </div> -->
+        <div class="featuresTextContainer">
+          <div class="imgSection">
+
+            <img src="./assets/featureImg5.png" alt="" srcset="" style="width: 158.96px" />
+          </div>
+          <h5>Permission-Less</h5>
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+          <h4>HOW IT WORKS</h4>
+        </div>
+      </div>
+      <div class="featuresCard">
+        <!-- <div class="featuresImgContainer">
+        </div> -->
+        <div class="featuresTextContainer">
+          <div class="imgSection">
+
+            <img class="featuresCard-img" src="./assets/featureImg1.png" alt="" srcset=""  />
+          </div>
+          <h5>Permission-Less</h5>
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+          <h4>HOW IT WORKS</h4>
+        </div>
+      </div>
+      <div class="featuresCard">
+        <!-- <div class="featuresImgContainer">
+        </div> -->
+        <div class="featuresTextContainer">
+          <div class="imgSection">
+            <img src="./assets/featureImg2.png" alt="" srcset=""  style="width: 158.96px" />
+          </div>
+
+          <h5>Permission-Less</h5>
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+          <h4>HOW IT WORKS</h4>
+        </div>
+      </div>
+      <div class="featuresCard">
+        <!-- <div class="featuresImgContainer">
+        </div> -->
+        <div class="featuresTextContainer">
+          <div class="imgSection">
+            <img src="./assets/featureImg5.png" alt="" srcset=""  style="width: 158.96px" />
+          </div>
+          <h5>Permission-Less</h5>
+          <p>
+            Unilend is a permission-less decentralized protocol that combines
+            spot UniLend is a permission-less decentralized protocol that
+            combines spot
+          </p>
+          <h4>HOW IT WORKS</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <section id="our-team-section">
+    <div class="common-container">
+      <div class="container-title">
+        Meet <br />
+        <span class="container-title-sub"> Our Team</span>
+      </div>
+      <div class="our-team-card-container">
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+        <div class="our-team-card">
+          <img class="our-team-card-img" src="./assets/ourteam1.png" alt="Group img 1" />
+          <div>
+            <div class="our-team-title">Co - Founder & CEO</div>
+            <div class="our-team-sub-title">Chandresh Aharwar</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-team-card-container-mobile ">
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" style="margin-top: 68px;">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="our-team-card-mobile">
+                <img class="our-team-card-mobile-img" src="./assets/ourteam1.png" alt="Group img 1" />
+                <div>
+                  <div class="our-team-sub-title-mobile">Chandresh Aharwar</div>
+                  <div class="our-team-title-mobile">Co - Founder & CEO</div>
+                </div>
+                <div class="our-team-mobile-social">
+                  <img src="./assets/card-img-logo1.png" alt="">
+                  <img src="./assets/card-img-logo2.png" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-indicators" style="position: relative;margin: 1rem;">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+              aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+              aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+              aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+              aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+              aria-label="Slide 9"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="our-ecosystem-section">
+    <div class="common-container">
+      <div class="container-title">
+        Our <br />
+        <span class="container-title-sub">Ecosystem</span>
+      </div>
+      <div id="infinite" class="highway-slider">
+        <div class="container highway-barrier">
+          <ul class="highway-lane">
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="reverve_infinite" class="highway-slider">
+        <div class="container highway-barrier">
+          <ul class="highway-lane">
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="infinite" class="highway-slider">
+        <div class="container highway-barrier">
+          <ul class="highway-lane">
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+              </div>
+            </li>
+            <li class="highway-car">
+              <div class="our-ecosystem-card">
+                <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="our-ecosystem-card-container">
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group1.png" alt="Group img 1" id="ecoImg1"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group2.png" alt="Group img 2" id="ecoImg2"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group3.png" alt="Group img 3" id="ecoImg3" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group4.png" alt="Group img 4" id="ecoImg4" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group5.png" alt="Group img 5" id="ecoImg5"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group6.png" alt="Group img 6" id="ecoImg6"/>
+        </div>
+
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group7.png" alt="Group img 7" id="ecoImg7"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group8.png" alt="Group img 8" id="ecoImg8"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group9.png" alt="Group img 9"  id="ecoImg9"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group10.png" alt="Group img 10"  id="ecoImg10"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group11.png" alt="Group img 11"  id="ecoImg11"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group12.png" alt="Group img 12"  id="ecoImg12"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group13.png" alt="Group img 13"  id="ecoImg13"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group14.png" alt="Group img 14"  id="ecoImg14"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group15.png" alt="Group img 15" id="ecoImg15" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group16.png" alt="Group img 16" id="ecoImg16" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group17.png" alt="Group img 17" id="ecoImg17" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group18.png" alt="Group img 18"  id="ecoImg18"/>
+        </div>
+
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group13.png" alt="Group img 19"  id="ecoImg19"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group14.png" alt="Group img 20"  id="ecoImg20"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group15.png" alt="Group img 21" id="ecoImg21" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group16.png" alt="Group img 22" id="ecoImg22"/>
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group17.png" alt="Group img 23"  id="ecoImg23" />
+        </div>
+        <div class="our-ecosystem-card">
+          <img class="our-ecosystem-card-img" src="./assets/group18.png" alt="Group img 24"  id="ecoImg24"/>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <section id="get-involved-section">
+    <div class="get-involved-container">
+      <div class="get-involved-content">
+        <div class="get-involved-title">Get involved <br /><span style="font-weight:bold">with us</span></div>
+        <div class="get-involved-sub-title">
+          UniLend is a permission-less decentralized protocol that combines
+          spotUniLend is a permission-less decentralized protocol that
+          combines spot UniLend is a permission-less decentralized protocol
+          that combines spot
+        </div>
+        <button class="get-involved-button">Register Here</button>
+      </div>
+
+      <div class="get-involved-content-2">
+        <div>
+          <div class="get-involved-content-title">For Projects</div>
+          <div class="get-involved-content-sub-title">
+            We invite DeFi projects to join hands with UniLend Finance and
+            expand the scope of their tokens with Lending and Borrowing
+          </div>
+        </div>
+        <div>
+          <div class="get-involved-content-title">For Devlopers</div>
+          <div class="get-involved-content-sub-title">
+            We are excited to welcome developers to pre-register to get
+            information in UniLend V2 hackathons, grants programs, and bug
+            bounties.
+          </div>
+        </div>
+        <div>
+          <div class="get-involved-content-title">For Community</div>
+          <div class="get-involved-content-sub-title">
+            UniLend community is a giant playground for DeFi knowledge. Be the
+            part by joining our elite Legions program to push DeFi.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="block-news-section">
+    <div class="common-container">
+      <div class="container-title">
+        Blog <br />
+        <span class="container-title-sub">& News</span>
+      </div>
+      <div class="container-sub-title">
+        Check the latest announcements for the <br /> UniLend Community.
+      </div>
+      <div class="blog-card-container">
+        <div class="blog-card">
+          <img class="blog-card-img" src="./assets/1YearAnniversary.png" alt="card img 1" />
+          <div class="blog-card-content">
+            Lorem Ipsum is simply dummy text of the printing
+          </div>
+        </div>
+        <div class="blog-card">
+          <img class="blog-card-img" src="./assets/CoverforBlog2.png" alt="card img 2" />
+          <div class="blog-card-content">
+            Lorem Ipsum is simply dummy text of the printing
+          </div>
+        </div>
+        <div class="blog-card">
+          <img class="blog-card-img" src="./assets/NonFungibleTokenization.png" alt="card img 3" />
+          <div class="blog-card-content">
+            Lorem Ipsum is simply dummy text of the printing
+            Lorem Ipsum is simply dummy text of the printing
+            Lorem Ipsum is simply dummy text of the printing
+            Lorem Ipsum is simply dummy text of the printing
+          </div>
+        </div>
+      </div>
+      <button class="get-involved-button read-more">Read More</button>
+    </div>
+  
+  </section>
+  <section id="they-write-aboutus-section">
+    <div class="common-container">
+      <div class="container-title">
+        They Write <br />
+        <span class="container-title-sub">About Us</span>
+      </div>
+
+      <div class="write-aboutus-card-container">
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            L Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+
+        <div class="write-aboutus-card">
+          <div class="write-aboutus-card-content">
+            Lorem Ipsum is simply dummy
+            text of the printing
+          </div>
+          <div class="write-aboutus-card-sub-content">
+            <div class="write-aboutus-card-date">31 Dec, 2021</div>
+            <div class="write-aboutus-card-crypto">Amb Crypto</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="our-community-section">
+    <div class="common-container">
+      <div class="container-title">
+        Join our<br />
+        <span class="container-title-sub">Community</span>
+      </div>
+      <div class="our-community-card-container">
+        <!-- <div class="community-wrapper"></div> -->
+        <div class="our-community-card">
+          <img class="our-community-card-img" src="./assets/Vector1.png" alt="vector img 1" id="communityLogo1" />
+          <div class="our-community-title">Twitter</div>
+        </div>
+        <div class="our-community-card">
+          <img class="our-community-card-img" src="./assets/Vector2.png" alt="vector img 2" id="communityLogo2"/>
+          <div class="our-community-title">Instagram</div>
+        </div>
+        <div class="our-community-card">
+          <img class="our-community-card-img" src="./assets/Vector3.png" alt="vector img 3" id="communityLogo3" />
+          <div class="our-community-title">Reddit</div>
+        </div>
+        <div class="our-community-card">
+          <img class="our-community-card-img" src="./assets/Vector3.png" alt="vector img 4" id="communityLogo4"/>
+          <div class="our-community-title">Reddit</div>
+        </div>
+      </div>
+    </div>
+    <div class="our-community-card-container-web">
+      <img src="./assets/Left_side_F.png" alt="vector img 1" />
+      <img src="./assets/Right_side_F.png" alt="vector img 2" />
+    </div>
+    <div class="our-community-card-container-mobile">
+      <img style="width: 35%;height:100%;margin-top: -1rem;" src="./assets/Left_side_M.png" alt="vector img 1" />
+      <img style="width: 50%;height: auto;" src="./assets/Right_side_M.png" alt="vector img 2" />
+    </div>
+  </section>
+  <section id="footer-section">
+    <div class="common-container">
+      <div class="footer-container">
+        <ul class="footer-first-child">
+          <li class="footer-title">GENERAL</li>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>FAQ</li>
+        </ul>
+        <ul>
+          <li class="footer-title">COMMUNITY</li>
+          <li>Legions</li>
+          <li>Grants</li>
+        </ul>
+        <ul>
+          <li class="footer-title">DEVELOPER</li>
+          <li>Gitbook</li>
+          <li>Github</li>
+          <li>Tutorial</li>
+        </ul>
+        <ul class="footer-last-child">
+          <li class="footer-title">NEWSLETTER</li>
+          <li class="subscribe-text">Subscribe to recieve updates from us</li>
+          <!-- <li></li> -->
+          <li class="footer-input-content">
+            <input class="footer-input" type="email" placeholder="Email address" name="email" id="email"
+              style="background:inherit;">
+            <img class="logo-content-img" src="./assets/Vector4.png" alt="" id="Vector7">
+
+          </li>
+          <li>
+            <button class="footer-btn">Submit</button>
+          </li>
+          <div class="logo-content">
+            <img class="logo-content-img" src="./assets/Vector4.png" alt="" id="Vector4">
+            <img class="logo-content-img" src="./assets/Vector1.png" alt="" id="Vector1">
+            <img class="logo-content-img" src="./assets/Vector2.png" alt="" id="Vector2">
+            <img class="logo-content-img" src="./assets/Vector5.png" alt="" id="Vector5">
+            <img class="logo-content-img" src="./assets/Vector3.png" alt="" id="Vector3">
+            <img class="logo-content-img" src="./assets/Vector6.png" alt="" id="Vector6">
+          </div>
+
+        </ul>
+      </div>
+    </div>
+    <div class="social-media-container">
+      <div class="logo-content-web">
+        <img src="./assets/unilendLogo.png" class="footerlogo" alt="" srcset="" id="footerlogo" >
+      </div>
+      <div class="logo-content-mobile">
+        <img class="logo-content-img" src="./assets/Vector4.png" alt="" id="Vector8">
+        <img class="logo-content-img" src="./assets/Vector1.png" alt="" id="Vector9">
+        <img class="logo-content-img" src="./assets/Vector2.png" alt="" id="Vector10">
+        <img class="logo-content-img" src="./assets/Vector5.png" alt="" id="Vector11">
+        <img class="logo-content-img" src="./assets/Vector3.png" alt="" id="Vector12">
+        <img class="logo-content-img" src="./assets/Vector6.png" alt="" id="Vector13">
+      </div>
+
+      <div class="copyright-text-mobile">
+        Copyright © 2021 UniLend Ltd. All Rights Reserved
+      </div>
+    </div>
+  </section>
+  <section id="copyright-section">
+    <div class="copyright-container">
+      <div class="copyright-text">
+        Copyright © 2021 UniLend Ltd. All Rights Reserved
+      </div>
+    </div>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
